@@ -23,7 +23,7 @@ const Signin = () => {
         password,
       });
 
-      if (response.data.user.role !== "admin") {
+      if (response.data.shopkeeper.role !== "admin") {
         Swal.fire({
           icon: "error",
           title: "Access Denied",
@@ -33,12 +33,13 @@ const Signin = () => {
         return;
       }
 
-      localStorage.setItem("token", response.data.access_token);
-      localStorage.setItem("user", JSON.stringify(response.data.user));
+      // localStorage.setItem("token", response.data.access_token);
+      // localStorage.setItem("user", JSON.stringify(response.data.user));
 
       navigate("/dashboard");
 
     } catch (err) {
+      alert(err);
       Swal.fire(
         "Error",
         err.response?.data?.message || "Login failed. Try again.",
