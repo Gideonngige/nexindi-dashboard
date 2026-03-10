@@ -7,6 +7,7 @@ import Settings from './Pages/Settings';
 import ShopscanUsers from './Pages/Shopscan/ShopscanUsers';
 import ShopscanShops from './Pages/Shopscan/Shopscanshops';
 import ShopscanPayments from './Pages/Shopscan/Shopscanpayments';
+import ShopscanRevenue from './Pages/Shopscan/Shopscanrevenue';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="/shopscan/users" element={<ShopscanUsers />} />
         <Route path="/shopscan/shops" element={<ShopscanShops />} />
         <Route path="/shopscan/payments" element={<ShopscanPayments />} />
+        <Route path="/shopscan/revenue" element={<ShopscanRevenue />} />
         <Route path="/settings" element={<Settings />} />
 
 
