@@ -1,6 +1,6 @@
 // src/screens/admin/ShopscanPayments.js
 import React, { useState } from "react";
-import Layout from "./Layout";
+import Layout from "../Layout";
 import { Search, CreditCard } from "lucide-react";
 
 const ShopscanPayments = () => {
@@ -56,7 +56,7 @@ const ShopscanPayments = () => {
         </div>
 
         {/* Search */}
-        <div className="flex items-center bg-white shadow rounded-lg px-4 py-2 mb-6 w-full md:w-80">
+        <div className="flex items-center bg-white shadow rounded-lg px-4 py-2 mb-6 w-full border border-blue-800">
           <Search size={18} className="text-gray-400 mr-2" />
 
           <input
