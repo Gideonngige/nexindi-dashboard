@@ -33,8 +33,8 @@ const Signin = () => {
         return;
       }
 
-      // localStorage.setItem("token", response.data.access_token);
-      // localStorage.setItem("user", JSON.stringify(response.data.user));
+      localStorage.setItem("token", response.data.access_token);
+      localStorage.setItem("user", JSON.stringify(response.data.shopkeeper));
 
       navigate("/dashboard");
 
