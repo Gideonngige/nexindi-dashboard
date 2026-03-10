@@ -4,6 +4,8 @@ import Signin from './Pages/Signin';
 import Shopscan from './Pages/Shopscan';
 import Dashboard from './Pages/Dashboard';
 import Settings from './Pages/Settings';
+import ShopscanUsers from './Pages/Shopscan/ShopscanUsers';
+import ShopscanShops from './Pages/Shopscan/Shopscanshops';
 
 
 function App() {
@@ -13,6 +15,8 @@ function App() {
         <Route path="/" element={<Signin />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/shopscan" element={<Shopscan />} />
+        <Route path="/shopscan/users" element={<ShopscanUsers />} />
+        <Route path="/shopscan/shops" element={<ShopscanShops />} />
         <Route path="/settings" element={<Settings />} />
 
 
